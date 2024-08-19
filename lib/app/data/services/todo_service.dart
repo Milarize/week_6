@@ -23,4 +23,9 @@ Todo(title: 'Plan vacation', description: 'Research destinations and book flight
     todos[index].isDone = !todos[index].isDone;
     todos.refresh();
   }
+  void editTodo(int index, Todo todo) {
+    todos[index] = todo;
+    todos.refresh();
+  }
+
 }
